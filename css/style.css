@@ -9,7 +9,7 @@
     /* /colors */
 
     /* layout */
-    --player-dimension: 80px;
+    --player-dimension: 90px;
 }
 /* /VAR */
 
@@ -100,7 +100,7 @@ main{
 
 /* sidebar */
 .sidebar{
-    width: 33vh;
+    width: 230px;
     height: 100%;
     background-color: black;
 }
@@ -108,7 +108,7 @@ main{
 
 /* homepage */
 .homepage{
-    width: calc(100% - 33vh);
+    width: calc(100% - 230px);
     height: 100%;
     background-color: var(--main-bg);
     overflow-y: auto;
@@ -145,13 +145,13 @@ main{
     /* MAIN */
     /* sidebar */
     .sidebar{
-        width: 12vh;
+        width: 50px;
     }
     /* /sidebar */
 
     /* homepage */
     .homepage{
-        width: calc(100% - 12vh);
+        width: calc(100% - 50px); 
     }
     /* /homepage */
     /* /MAIN */
