@@ -217,6 +217,10 @@ main{
     width: calc(100% / 6 - var(--card-spaces));
     margin-right: var(--card-spaces);
 }
+
+.card-txt{
+    text-align: center;
+}
 /* /section-recently */
 /* /homepage */
 /* /MAIN */
