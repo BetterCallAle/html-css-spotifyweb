@@ -177,6 +177,18 @@ nav{
     /* debug */
     color: white;
 }
+
+.homepage header{
+    height: 110px;
+    width: calc(100% - 230px);
+    line-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
 /* /homepage */
 /* /MAIN */
 
@@ -255,6 +267,12 @@ nav{
     .homepage{
         width: calc(100% - 50px); 
     }
+
+    /* header */
+    .homepage header{
+        width: calc(100% - 50px);
+    }
+    /* /header */
     /* /homepage */
     /* /MAIN */
 }
