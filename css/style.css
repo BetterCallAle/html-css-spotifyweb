@@ -99,6 +99,10 @@ main{
 }
 
 /* sidebar */
+.side-container{
+    padding: 0 1.5em;
+}
+
 .sidebar{
     width: 230px;
     height: 100%;
@@ -108,7 +112,6 @@ main{
 /* logo */
 .logo{
     padding-top: 2em;
-    padding-left: 2em;
     padding-bottom: .3em;
     /* debug */
     background-color: lightblue
@@ -164,8 +167,10 @@ main{
     /* sidebar */
     .sidebar{
         width: 50px;
-        padding: .3em .5em;
+    }
 
+    .side-container{
+        padding: .3em .5em;
     }
 
     /* logo */
