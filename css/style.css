@@ -138,17 +138,17 @@ main{
 /* /logo */
 
 /* sidebar-nav */
-.sidebar nav li img{
+.side-nav li img{
     width: 18%;
     vertical-align: middle;
     opacity: .9;
 }
 
-.sidebar nav li:first-child{
+.side-nav li:first-child{
     color: rgba(255, 255, 255, 0.8);
 }
 
-nav{
+.side-nav{
     /* debug */
     background-color: lightpink;
 }
@@ -178,6 +178,7 @@ nav{
     color: white;
 }
 
+/* header */
 .homepage header{
     height: 110px;
     width: calc(100% - 230px);
@@ -189,6 +190,21 @@ nav{
     right: 0;
     z-index: 999;
 }
+/* /header */
+
+/* homepage-nav */
+.homepage-nav{
+    margin-top: 120px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.homepage-nav ul li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+/* /homepage-nav */
 /* /homepage */
 /* /MAIN */
 
@@ -245,7 +261,7 @@ nav{
         display: none;
     }
 
-    .sidebar nav li img, .account img{
+    .side-nav li img, .account img{
         width: 90%;
     }
     /* /sidebar-nav */
