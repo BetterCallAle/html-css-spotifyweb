@@ -7,6 +7,9 @@
     --player-bg: #282828;
     --green: #ADFF2F;
     /* /colors */
+
+    /* layout */
+    --player-dimension: 80px;
 }
 /* /VAR */
 
@@ -45,6 +48,15 @@ ul{
     width: 100%;
 }
 
+/* flex */
+.flex-container{
+    display: flex;
+}
+
+.j-c-b{
+    justify-content: space-between;
+}
+
 /* margin */
 .mt-1{
     margin-top: 1rem;
@@ -81,9 +93,37 @@ ul{
 /* /COMMON */
 
 /* MAIN */
+main{
+    height: calc(100% - var(--player-dimension));
+    width: 100%;
+}
+
+/* sidebar */
+.sidebar{
+    width: 33vh;
+    height: 100%;
+    background-color: black;
+}
+/* /sidebar */
+
+/* homepage */
+.homepage{
+    width: calc(100% - 33vh);
+    height: 100%;
+    background-color: var(--main-bg);
+    overflow-y: auto;
+    /* debug */
+    color: white;
+}
+/* /homepage */
 /* /MAIN */
 
 /* PLAYER */
+.player{
+    height: var(--player-dimension);
+    width: 100%;
+    background-color: var(--player-bg);
+}
 /* /PLAYER */
 
 /* MEDIA QUERY */
@@ -95,12 +135,25 @@ ul{
 
 /* TABLET (700PX) */
 @media screen and (max-width:700px){
-    
+
 }
 /* TABLET (700PX) */
 
 /* MOBILE (600PX) */
 @media screen and (max-width:600px){
 
+    /* MAIN */
+    /* sidebar */
+    .sidebar{
+        width: 12vh;
+    }
+    /* /sidebar */
+
+    /* homepage */
+    .homepage{
+        width: calc(100% - 12vh);
+    }
+    /* /homepage */
+    /* /MAIN */
 }
 /* /MOBILE (600PX) */
