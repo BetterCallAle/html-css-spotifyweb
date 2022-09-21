@@ -43,6 +43,10 @@ ul{
     list-style-type: none;
 }
 
+.overflow-auto{
+    overflow-y: auto;
+}
+
 .wrapper{
     height: 100vh;
     width: 100%;
@@ -110,6 +114,7 @@ main{
     height: 100%;
     background-color: black;
     color: var(--main-gray);
+    flex-direction: column;
 }
 
 .side-container{
@@ -148,6 +153,20 @@ nav{
     background-color: lightpink;
 }
 /* /sidebar-nav */
+
+/* sidebar-playlist */
+.playlist{
+    flex-grow: 1;
+    /* debug */
+    background-color: lightsalmon;
+}
+/* /sidebar-playlist */
+
+/* sidebar-account */
+.account img{
+    width: 18%;
+}
+/* /sidebar-account */
 /* /sidebar */
 
 /* homepage */
@@ -155,7 +174,6 @@ nav{
     width: calc(100% - 230px);
     height: 100%;
     background-color: var(--main-bg);
-    overflow-y: auto;
     /* debug */
     color: white;
 }
@@ -215,10 +233,22 @@ nav{
         display: none;
     }
 
-    .sidebar nav li img{
+    .sidebar nav li img, .account img{
         width: 90%;
     }
     /* /sidebar-nav */
+
+    /* sidebar-playlist */
+    .playlist .side-container{
+        display: none;
+    }
+    /* /sidebar-playlist */
+
+    /* sidebar-account */
+    .side-cta, .side-account .account span{
+        display:none
+    }
+    /* /sidebar-account */
     /* /sidebar */
 
     /* homepage */
