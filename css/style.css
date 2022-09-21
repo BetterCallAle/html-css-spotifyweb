@@ -104,6 +104,24 @@ main{
     height: 100%;
     background-color: black;
 }
+
+/* logo */
+.logo{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: .3em;
+    /* debug */
+    background-color: lightblue
+}
+
+.logo-big{
+   width: 70%;
+}
+
+.logo-small{
+    display: none;
+}
+/* /logo */
 /* /sidebar */
 
 /* homepage */
@@ -146,7 +164,23 @@ main{
     /* sidebar */
     .sidebar{
         width: 50px;
+        padding: .3em .5em;
+
     }
+
+    /* logo */
+    .logo{
+        padding: 0;
+    }
+
+    .logo-big{
+        display: none;
+    }
+
+    .logo-small{
+        display: inline-block;
+    }
+    /* /logo */
     /* /sidebar */
 
     /* homepage */
