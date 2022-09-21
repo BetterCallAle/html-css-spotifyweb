@@ -10,6 +10,8 @@
 
     /* layout */
     --player-dimension: 90px;
+
+    --card-spaces: 1em;
 }
 /* /VAR */
 
@@ -50,6 +52,14 @@ ul{
 .wrapper{
     height: 100vh;
     width: 100%;
+}
+
+.side-container{
+    padding: 0 1.5em;
+}
+
+.homepage-container{
+    padding: 0 2em;
 }
 
 /* flex */
@@ -117,10 +127,6 @@ main{
     flex-direction: column;
 }
 
-.side-container{
-    padding: 0 1.5em;
-}
-
 /* logo */
 .logo{
     padding: 2em 0;
@@ -180,7 +186,7 @@ main{
 
 /* header */
 .homepage header{
-    height: 110px;
+    height: 105px;
     width: calc(100% - 230px);
     line-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -205,6 +211,13 @@ main{
 }
 
 /* /homepage-nav */
+
+/* section-recently */
+.col{
+    width: calc(100% / 6 - var(--card-spaces));
+    margin-right: var(--card-spaces);
+}
+/* /section-recently */
 /* /homepage */
 /* /MAIN */
 
@@ -219,13 +232,29 @@ main{
 /* MEDIA QUERY */
 /* SMALL DESKTOP (1100PX) */
 @media screen and (max-width:1100px) {
+    /* HOMEPAGE */
+    /* section */
+    .row{
+        flex-wrap: wrap;
+    }
     
+    .col{
+        width: calc(100% / 4 - var(--card-spaces));
+    }
+    /* /section */
+    /* /HOMEPAGE */
 }
 /* /SMALL DESKTOP (1100PX) */
 
 /* TABLET (700PX) */
 @media screen and (max-width:700px){
-
+    /* HOMEPAGE */
+    /* section */    
+    .col{
+        width: calc(100% / 2 - var(--card-spaces));
+    }
+    /* /section */
+    /* /HOMEPAGE */
 }
 /* TABLET (700PX) */
 
