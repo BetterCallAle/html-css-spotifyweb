@@ -90,6 +90,12 @@ ul{
     margin-bottom: 4rem;
 }
 /* /margin */
+
+/* font-weight */
+.fw-700{
+    font-weight: 700;
+}
+/* /font-weight */
 /* /COMMON */
 
 /* MAIN */
@@ -99,20 +105,20 @@ main{
 }
 
 /* sidebar */
-.side-container{
-    padding: 0 1.5em;
-}
-
 .sidebar{
     width: 230px;
     height: 100%;
     background-color: black;
+    color: var(--main-gray);
+}
+
+.side-container{
+    padding: 0 1.5em;
 }
 
 /* logo */
 .logo{
-    padding-top: 2em;
-    padding-bottom: .3em;
+    padding: 2em 0;
     /* debug */
     background-color: lightblue
 }
@@ -125,6 +131,23 @@ main{
     display: none;
 }
 /* /logo */
+
+/* sidebar-nav */
+.sidebar nav li img{
+    width: 18%;
+    vertical-align: middle;
+    opacity: .9;
+}
+
+.sidebar nav li:first-child{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+nav{
+    /* debug */
+    background-color: lightpink;
+}
+/* /sidebar-nav */
 /* /sidebar */
 
 /* homepage */
@@ -186,6 +209,16 @@ main{
         display: inline-block;
     }
     /* /logo */
+
+    /* sidebar-nav */
+    .sidebar nav li span{
+        display: none;
+    }
+
+    .sidebar nav li img{
+        width: 90%;
+    }
+    /* /sidebar-nav */
     /* /sidebar */
 
     /* homepage */
