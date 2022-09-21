@@ -1,3 +1,16 @@
+/* VAR */
+:root{
+
+    /* colors */
+    --main-bg: #141922;
+    --main-gray: #74767B;
+    --player-bg: #282828;
+    --green: #ADFF2F;
+    /* /colors */
+}
+/* /VAR */
+
+
 /* RESET */
 *,
 *::after,
