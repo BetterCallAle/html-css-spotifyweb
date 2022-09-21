@@ -54,11 +54,11 @@ ul{
     width: 100%;
 }
 
-.side-container{
+.small-container{
     padding: 0 1.5em;
 }
 
-.homepage-container{
+.big-container{
     padding: 0 2em;
 }
 
@@ -212,7 +212,7 @@ main{
 
 /* /homepage-nav */
 
-/* section-recently */
+/* sections */
 .col{
     width: calc(100% / 6 - var(--card-spaces));
     margin-right: var(--card-spaces);
@@ -221,7 +221,7 @@ main{
 .card-txt{
     text-align: center;
 }
-/* /section-recently */
+/* /sections*/
 /* /homepage */
 /* /MAIN */
 
@@ -230,6 +230,24 @@ main{
     height: var(--player-dimension);
     width: 100%;
     background-color: var(--player-bg);
+}
+
+.player-container{
+    padding: 0 .5em;
+}
+
+.song-name, .song-tools{
+    width: 15%;
+    /* debug */
+    background-color: lightseagreen;
+    height: var(--player-dimension);
+}
+
+.song-bar{
+    width: 70%;
+    /* debug */
+    background-color: lightyellow;
+    height: var(--player-dimension);
 }
 /* /PLAYER */
 
@@ -247,6 +265,16 @@ main{
     }
     /* /section */
     /* /HOMEPAGE */
+
+    /* PLAYER */
+    .song-name, .song-tools{
+        width: 20%;
+    }
+
+    .song-bar{
+        width: 60%;
+    }
+    /* /PLAYER */
 }
 /* /SMALL DESKTOP (1100PX) */
 
@@ -259,6 +287,16 @@ main{
     }
     /* /section */
     /* /HOMEPAGE */
+
+    /* PLAYER */
+    .song-name, .song-tools{
+        width: 28%;
+    }
+
+    .song-bar{
+        width: 42%;
+    }
+    /* /PLAYER */
 }
 /* TABLET (700PX) */
 
@@ -271,7 +309,7 @@ main{
         width: 50px;
     }
 
-    .side-container{
+    .small-container{
         padding: .3em .5em;
     }
 
@@ -300,7 +338,7 @@ main{
     /* /sidebar-nav */
 
     /* sidebar-playlist */
-    .playlist .side-container{
+    .playlist .small-container{
         display: none;
     }
     /* /sidebar-playlist */
