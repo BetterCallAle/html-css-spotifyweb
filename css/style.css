@@ -40,6 +40,11 @@ ul{
     list-style-type: none;
 }
 
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
 /* margin */
 .mt-1{
     margin-top: 1rem;
@@ -74,3 +79,28 @@ ul{
 }
 /* /margin */
 /* /COMMON */
+
+/* MAIN */
+/* /MAIN */
+
+/* PLAYER */
+/* /PLAYER */
+
+/* MEDIA QUERY */
+/* SMALL DESKTOP (1100PX) */
+@media screen and (max-width:1100px) {
+    
+}
+/* /SMALL DESKTOP (1100PX) */
+
+/* TABLET (700PX) */
+@media screen and (max-width:700px){
+    
+}
+/* TABLET (700PX) */
+
+/* MOBILE (600PX) */
+@media screen and (max-width:600px){
+
+}
+/* /MOBILE (600PX) */
