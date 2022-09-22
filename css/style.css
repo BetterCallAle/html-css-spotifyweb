@@ -366,6 +366,14 @@ main{
     width: calc(100% - var(--sidebar-width) * 2);
 }
 
+.player button{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 /* song-info */
 .song-info{
     align-items: center;
@@ -403,12 +411,7 @@ main{
 }
 
 .player-actions button{
-    background-color:rgba(0, 0, 0, 0);
-    border: none;
-    font-size: inherit;
-    color: inherit;
     margin-right: 1.3rem;
-    cursor: pointer;
 }
 
 .player-actions button:last-child{
