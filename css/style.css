@@ -10,7 +10,8 @@
 
     /* layout */
     --player-dimension: 90px;
-
+    --sidebar-width: 230px;
+    --sidebar-width-xs: 50px;
     --card-spaces: 1em;
 }
 /* /VAR */
@@ -120,7 +121,7 @@ main{
 
 /* sidebar */
 .sidebar{
-    width: 230px;
+    width: var(--sidebar-width);
     height: 100%;
     background-color: black;
     color: var(--main-gray);
@@ -224,7 +225,7 @@ main{
 
 /* homepage */
 .homepage{
-    width: calc(100% - 230px);
+    width: calc(100% - var(--sidebar-width));
     height: 100%;
     background-color: var(--main-bg);
     /* debug */
@@ -234,7 +235,7 @@ main{
 /* header */
 .homepage header{
     height: 105px;
-    width: calc(100% - 230px);
+    width: calc(100% - var(--sidebar-width));
     line-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: right;
@@ -260,6 +261,10 @@ main{
 /* /homepage-nav */
 
 /* sections */
+.row{
+    flex-wrap: wrap;
+}
+
 .col{
     width: calc(100% / 6 - var(--card-spaces));
     margin-right: var(--card-spaces);
@@ -281,17 +286,18 @@ main{
 
 .player-container{
     padding: 0 .5em;
+    justify-content: space-between;
 }
 
 .song-name, .song-tools{
-    width: 15%;
+    width: var(--sidebar-width);
     /* debug */
     background-color: lightseagreen;
     height: var(--player-dimension);
 }
 
 .song-bar{
-    width: 70%;
+    width: 40%;
     /* debug */
     background-color: lightyellow;
     height: var(--player-dimension);
@@ -303,10 +309,6 @@ main{
 @media screen and (max-width:1100px) {
     /* HOMEPAGE */
     /* section */
-    .row{
-        flex-wrap: wrap;
-    }
-    
     .col{
         width: calc(100% / 4 - var(--card-spaces));
     }
@@ -314,13 +316,7 @@ main{
     /* /HOMEPAGE */
 
     /* PLAYER */
-    .song-name, .song-tools{
-        width: 20%;
-    }
-
-    .song-bar{
-        width: 60%;
-    }
+   
     /* /PLAYER */
 }
 /* /SMALL DESKTOP (1100PX) */
@@ -336,12 +332,8 @@ main{
     /* /HOMEPAGE */
 
     /* PLAYER */
-    .song-name, .song-tools{
-        width: 28%;
-    }
-
-    .song-bar{
-        width: 42%;
+    .song-name{
+        flex-shrink: 3;
     }
     /* /PLAYER */
 }
@@ -353,7 +345,7 @@ main{
     /* MAIN */
     /* sidebar */
     .sidebar{
-        width: 50px;
+        width: var(--sidebar-width-xs);
     }
 
     .small-container{
@@ -409,12 +401,12 @@ main{
 
     /* homepage */
     .homepage{
-        width: calc(100% - 50px); 
+        width: calc(100% - var(--sidebar-width-xs)); 
     }
 
     /* header */
     .homepage header{
-        width: calc(100% - 50px);
+        width: calc(100% - var(--sidebar-width-xs));
     }
     /* /header */
     /* /homepage */
