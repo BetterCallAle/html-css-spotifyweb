@@ -236,13 +236,22 @@ main{
 .homepage header{
     height: 105px;
     width: calc(100% - var(--sidebar-width));
-    line-height: 110px;
+    align-items: center;
+    justify-content: right;
     background-color: rgba(0, 0, 0, 0.3);
-    text-align: right;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
+}
+
+.button{
+    display: inline-block;
+    padding: .9rem 3rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: .9rem;
+    margin-right: 1rem;
 }
 /* /header */
 
@@ -251,11 +260,14 @@ main{
     margin-top: 120px;
     padding: 1rem 0;
     text-align: center;
+    font-size: .8rem;
+    color: var(--main-gray);
 }
 
 .homepage-nav ul li{
     display: inline-block;
     margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* /homepage-nav */
