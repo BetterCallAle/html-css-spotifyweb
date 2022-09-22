@@ -173,8 +173,20 @@ main{
     opacity: .9;
 }
 
-.side-nav li:first-child{
+.side-nav .active-side{
     color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.active-side::after{
+    content: "";
+    display: inline-block;
+    border-left: 3px solid var(--green);
+    height: 100%;
+    position: absolute;
+    top: -0.2em;
+    left: -1.5em;
+    padding: 1.5em 0;
 }
 /* /sidebar-nav */
 
@@ -292,6 +304,21 @@ main{
     margin-bottom: 1rem;
 }
 
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: "";
+    display: inline-block;
+    width: 40%;
+    border-bottom: 2px solid var(--green);
+    position: absolute;
+    margin-top: .5em;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%);
+}
 /* /homepage-nav */
 
 /* sections */
