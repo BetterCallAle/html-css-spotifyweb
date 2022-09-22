@@ -6,6 +6,7 @@
     --main-gray: #74767B;
     --player-bg: #282828;
     --green: #ADFF2F;
+    --off-white: #C1C1C1;
     /* /colors */
 
     /* layout */
@@ -354,11 +355,16 @@ main{
     text-align: center;
 }
 
-.player-actions i{
+.player-actions button{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    font-size: inherit;
+    color: inherit;
     margin-right: 1.3rem;
+    cursor: pointer;
 }
 
-.player-actions i:last-child{
+.player-actions button:last-child{
     margin-right: 0;
 }
 
@@ -383,6 +389,7 @@ main{
     vertical-align: middle;
     margin: 0 2em;
     position:relative;
+    cursor:pointer;
 }
 
 .timeline div::before{
@@ -390,12 +397,16 @@ main{
     display: inline-block;
     width: 30%;
     border-radius: 50px;
-    border:2px solid white;
+    border:2px solid var(--off-white);
     position:absolute;
     bottom:-1px;
     left:-1px;
 }
 /* /song-bar */
+
+/* song-tools */
+
+/* /song-tools */
 /* /PLAYER */
 
 /* MEDIA QUERY */
