@@ -84,8 +84,18 @@ ul{
     border-radius: 50px;
     border:2px solid var(--off-white);
     position:absolute;
-    bottom:-1px;
-    left:-1px;
+    bottom:-1.5px;
+    left:-2px;
+}
+
+.range::after{
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    position: absolute;
+    bottom: -.5rem;
+    left: 29%;
+    display: none;
 }
 /* flex */
 .flex-container{
@@ -285,7 +295,7 @@ main{
     border: 1px solid white;
     border-radius: 30px;
     font-size: .9rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 /* /header */
 
@@ -410,16 +420,17 @@ main{
     text-align: center;
 }
 
-.player-actions button{
-    margin-right: 1.3rem;
-}
-
-.player-actions button:last-child{
-    margin-right: 0;
+.player-actions .button-mr{
+    margin-right: 1rem;
 }
 
 .bigger-icon{
-    font-size: 1.8rem;
+    vertical-align: sub;
+    margin: 0 1.5rem;
+}
+
+.bigger-icon i{
+    font-size: 2rem;
 }
 
 .timeline{
@@ -438,12 +449,13 @@ main{
 /* /song-bar */
 
 /* song-tools */
-.song-tools i{
+.song-tools button{
     margin-right: .8rem;
+    font-size: .8rem;
 }
 
 .song-tools .range{
-    width: 43%;
+    width: 50%;
 }
 /* /song-tools */
 /* /PLAYER */
