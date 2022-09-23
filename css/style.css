@@ -117,6 +117,10 @@ ul{
     font-weight: 700;
 }
 /* /font-weight */
+
+li:hover{
+    color:white
+}
 /* /COMMON */
 
 /* MAIN */
@@ -169,6 +173,10 @@ main{
     left: -1.5em;
     padding: 1.5em 0;
 }
+
+.side-nav li:hover img{
+    opacity: 1;
+}
 /* /sidebar-nav */
 
 /* sidebar-playlist */
@@ -194,6 +202,14 @@ main{
     vertical-align: middle;
     margin-right: .5rem;
 }
+
+.create-playlist:hover{
+    color: white;
+}
+
+.create-playlist:hover button{
+    background-color: white;
+}
 /* /sidebar-playlist */
 
 /* sidebar-cta */
@@ -205,6 +221,10 @@ main{
 
 .side-download-icon{
     margin-right: .5rem;
+}
+
+.side-download:hover{
+    color: white;
 }
 /* /sidebar-cta */
 
@@ -411,7 +431,8 @@ main{
 .range{
     display: inline-block;
     width: 50%;
-    border: 2px solid var(--main-gray);
+    height: 4px;
+    background-color: var(--main-gray);
     border-radius: 50px;
     vertical-align: middle;
     position:relative;
@@ -423,10 +444,11 @@ main{
     display: inline-block;
     width: 30%;
     border-radius: 50px;
-    border:2px solid var(--off-white);
+    background-color: var(--off-white);
+    height: 4px;
     position:absolute;
-    bottom:-1.5px;
-    left:-2px;
+    bottom: 0;
+    left: 0;
 }
 
 .range::after{
@@ -434,11 +456,19 @@ main{
     font-family: "Font Awesome 5 Free";
     font-size: 1rem;
     position: absolute;
-    bottom: -.5rem;
+    bottom: -.4rem;
     left: 29%;
     display: none;
 }
 
+
+.range:hover::before{
+    background-color: var(--green);
+}
+
+.range:hover::after{
+    display: inline-block;
+}
 /* song-info */
 .song-info .cover, .song-info .song-icon{
     width: 25%;
@@ -462,6 +492,15 @@ main{
 .song-info .song-icon i{
     margin-right: .4rem;
 }
+
+.song-name:hover h5{
+    color: white;
+    text-decoration: underline;
+}
+
+.song-icon i:hover{
+    color: white;
+}
 /* /song-info */
 
 /* song-bar */
@@ -476,10 +515,15 @@ main{
 .bigger-icon{
     vertical-align: sub;
     margin: 0 1.5rem;
+    transition: all 125ms linear;
 }
 
 .bigger-icon i{
     font-size: 2rem;
+}
+
+.bigger-icon:hover{
+    transform: scale(1.1);
 }
 
 .timeline{
