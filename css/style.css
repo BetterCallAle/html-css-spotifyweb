@@ -72,35 +72,6 @@ ul{
     border-radius: 50%;
 }
 
-.range{
-    display: inline-block;
-    border: 2px solid var(--main-gray);
-    border-radius: 50px;
-    vertical-align: middle;
-    position:relative;
-    cursor:pointer;
-}
-
-.range::before{
-    content: "";
-    display: inline-block;
-    width: 30%;
-    border-radius: 50px;
-    border:2px solid var(--off-white);
-    position:absolute;
-    bottom:-1.5px;
-    left:-2px;
-}
-
-.range::after{
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    font-size: 1rem;
-    position: absolute;
-    bottom: -.5rem;
-    left: 29%;
-    display: none;
-}
 /* flex */
 .flex-container{
     display: flex;
@@ -170,10 +141,6 @@ main{
 
 .logo-big{
    width: 70%;
-}
-
-.logo-small{
-    display: none;
 }
 /* /logo */
 
@@ -370,8 +337,38 @@ main{
     cursor: pointer;
 }
 
+.range{
+    display: inline-block;
+    width: 50%;
+    border: 2px solid var(--main-gray);
+    border-radius: 50px;
+    vertical-align: middle;
+    position:relative;
+    cursor:pointer;
+}
+
+.range::before{
+    content: "";
+    display: inline-block;
+    width: 30%;
+    border-radius: 50px;
+    border:2px solid var(--off-white);
+    position:absolute;
+    bottom:-1.5px;
+    left:-2px;
+}
+
+.range::after{
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    position: absolute;
+    bottom: -.5rem;
+    left: 29%;
+    display: none;
+}
 /* song-info */
-.song-info .cover{
+.song-info .cover, .song-info .song-icon{
     width: 25%;
 }
 
@@ -387,7 +384,6 @@ main{
 }
 
 .song-info .song-icon{
-    width: 25%;
     color: var(--main-gray);
 }
 
@@ -423,7 +419,6 @@ main{
 }
 
 .timeline .range{
-    width: 50%;
     margin: 0 2em;
 }
 /* /song-bar */
@@ -432,10 +427,6 @@ main{
 .song-tools button{
     margin-right: .8rem;
     font-size: .8rem;
-}
-
-.song-tools .range{
-    width: 50%;
 }
 /* /song-tools */
 /* /PLAYER */
@@ -450,10 +441,6 @@ main{
     }
     /* /section */
     /* /HOMEPAGE */
-
-    /* PLAYER */
-   
-    /* /PLAYER */
 }
 /* /SMALL DESKTOP (1100PX) */
 
@@ -492,14 +479,17 @@ main{
         padding: .3em .5em;
     }
 
+    .logo-big,
+    .sidebar nav li span,
+    .playlist .small-container,
+    .logo-small {
+        display: none;
+    }
+
     /* logo */
     .logo{
         padding: 0;
         margin: .3rem 0;
-    }
-
-    .logo-big{
-        display: none;
     }
 
     .logo-small{
@@ -508,20 +498,10 @@ main{
     /* /logo */
 
     /* sidebar-nav */
-    .sidebar nav li span{
-        display: none;
-    }
-
     .side-nav li img, .account img{
         width: 90%;
     }
     /* /sidebar-nav */
-
-    /* sidebar-playlist */
-    .playlist .small-container{
-        display: none;
-    }
-    /* /sidebar-playlist */
 
     /* sidebar-account */
     .side-download span, .account-name{
