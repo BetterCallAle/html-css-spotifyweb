@@ -109,6 +109,10 @@ ul{
 .j-c-b{
     justify-content: space-between;
 }
+
+.a-i-c{
+    align-items: center;
+}
 /* /flex */
 
 /* margin */
@@ -285,7 +289,6 @@ main{
 .homepage header{
     height: 105px;
     width: calc(100% - var(--sidebar-width));
-    align-items: center;
     justify-content: right;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -364,7 +367,6 @@ main{
 
 .player-container{
     margin-left: .7rem;
-    align-items: center;
     height: 100%;
 }
 
@@ -385,10 +387,6 @@ main{
 }
 
 /* song-info */
-.song-info{
-    align-items: center;
-}
-
 .song-info .cover{
     width: 25%;
 }
