@@ -259,6 +259,11 @@ main{
     border-radius: 30px;
     font-size: .9rem;
     margin-right: 1.5rem;
+    transition: all 125ms linear;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 /* /header */
 
@@ -325,6 +330,7 @@ main{
     width: 70px;
     height: 70px;
     text-align: center;
+    padding-left: .3rem;
     line-height: 60px;
     border: 5px solid white;
     border-radius: 50%;
@@ -432,6 +438,7 @@ main{
     left: 29%;
     display: none;
 }
+
 /* song-info */
 .song-info .cover, .song-info .song-icon{
     width: 25%;
