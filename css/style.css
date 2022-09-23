@@ -564,25 +564,6 @@ main{
     .song-tools{
         width: 35%;
     }
-
-    /* song-info */
-    .song-info .cover{
-        width: 25%;
-    }
-
-    .song-info .song-icon{
-        width: 25%;
-    }
-
-    .song-info .song-icon i{
-        margin-right: 0;
-        margin-left: .5rem;
-    }
-
-    .song-info .song-name{
-        width: 40%;
-        margin-left: 0;
-    }
     /* /PLAYER */
 }
 /* /MOBILE (600PX) */
