@@ -142,6 +142,10 @@ main{
 .logo-big{
    width: 70%;
 }
+
+.logo-small{
+    display: none;
+}
 /* /logo */
 
 /* sidebar-nav */
@@ -481,8 +485,7 @@ main{
 
     .logo-big,
     .sidebar nav li span,
-    .playlist .small-container,
-    .logo-small {
+    .playlist .small-container {
         display: none;
     }
 
