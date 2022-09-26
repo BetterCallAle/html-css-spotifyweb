@@ -215,7 +215,7 @@ main{
 /* sidebar-cta */
 .side-download{
     font-size: .8rem;
-    padding-bottom: .7rem;
+    padding: .7rem 0;
     border-bottom: 1px solid var(--main-gray);
 }
 
@@ -314,7 +314,7 @@ main{
     margin-top: .5em;
     top:100%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 }
 /* /homepage-nav */
 
